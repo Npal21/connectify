@@ -1,0 +1,122 @@
+<div th:fragment="contact">   
+
+<!-- Modal toggle -->
+  
+  <!-- Main modal -->
+  <div id="view_contact_modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <!-- Modal header -->
+                <div class="flex justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                  <div class=""></div>
+                  <div class="p-5 flex flex-col justify-center items-center space-y-2">
+                    <img
+                        onerror="this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEX///8AAACvr6/p6en19fXf39++vr57e3s/Pz/x8fHU1NRTU1P8/PykpKTExMSAgICKiopvb29OTk4gICDMzMwlJSWbm5uQkJAPDw+rq6teXl62trZDQ0MaGho0NDTR0dEtLS1nZ2fV4zZcAAADhUlEQVR4nO3cibKiMBAFUMMqqIgLT3B///+TUwyFOiqSxkCnmXu+oG8BTUISJhMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgE8WB4zhBHHEX0gu3WOWqlq8Kl7sgs7xgr57tgzl3WeYcpi/5StMDd2GG+LO3+Uozn7s4E4rGfKWCu7zvrT4GVGrFXeCX5s13aG0vuuHMX1voyCKGGgGVCrnL7G6hFVCpBXehXcWaAZWKuUvt6Kid8CjzUXS0AyrlcBfbSd4e7CbnLrYLyiWUeRHfj7abTLnLpdNvpBV57fSHmPCHu2CyNTHhmrtgqmhDTLiR9vGG+hjKexATcsKEu2SizzP7d6TN9qmtVF4z3ZET7rhLJhp/Qt3J7520aXBAThhwl0w0/vehS5kdlnJxSzX6nzAqR+6CyVJiwpS7YLItMeGWu2C6jBQw4y63A9q4TdqYreSREnrc5XZBGbhJG7JVvJN2wJPIS0gZuUkbsd0sNQMuuQvtzNP74LaWuS7zl3vWCHgWNyJ95La/9zPRASeTqO0qnqV9J331ebvJSvAzeHNo/vy9Gcm+r6hpJpXKv0Nrfvp6HTep8BbzxAvCx5CnMBA6UPvITRa7ZbjcLZJxXT0AAAD4v8xdP75cLrHvjm/E5m2LcJ09nHvK1mGxHUtOL0mvDbOna5qITxkFvx+n+Er9HiSHvIQ6K8F5KG2Buxa0n5epzSR+9A6Ie4SlZYypy/hKHSXdq57eaaBnoZiek1B3mtRyGbdqxwso5zL6tA7zbGr9uVn63uBnlt+p9C2Jr6zepEjdCPWexdujdFe121i76m0qoLURzdyiFStvVBNN5s7CdvP9a+Jf1h0w8Q0HVMqyV79Hn0u0Odo1gDPXRu+saqimH8KKRY+iRz1sqCez5z7t4x4tWXOfmu+jNVv6qf43NaoZd7QK9dwBhR1nFKintimsOOHd5yW04yLq/Cipuz13vD4baYW/nZqcFb7DPlP0mtYGTblyD2z67TMl7l7zzQduPcz/Opvrn/zp6sS7E5x+oJmOd9WN/nMIOt6jif0Nuu94h98DBFSKM2DfA5oK57DmMEhCzmMnQzQa3lbT9gtdMzh/xPvdirYuzv/x9T+iKW0YEw4SUCm+cRvtpwLd8R1xcwdKyHdMapgXPucrPyqcQYznICYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAF/gCjJCphADpLTwAAAABJRU5ErkJggg=='"
+                        id="contact_image"
+                        class="w-32 h-32 rounded-full"
+                        src=""
+                        alt=""
+                    />
+                    <h3
+                        id="contact_name" 
+                        class="text-xl font-semibold text-gray-900 dark:text-white">                      
+                    </h3>
+
+                    <p 
+                        class="text-gray-700 dark:text-gray-300"
+                        id="contact_email">
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300" id="contact_phone">
+                        8897945646
+                    </p>
+                  </div>
+            
+                  <button onclick="closeContactModal()" type="button" class="text-gray-400 border bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 flex justify-center items-center h-8 ms-autor dark:hover:bg-gray-600 dark:hover:text-white">
+                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                  </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-4 md:p-5 space-y-4">
+                <!-- Other contact info -->
+                <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-center rtl:text-right text-gray-500 dark:text-gray-400">
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-700 dark:border-gray-700">
+                                <th
+                                    scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                >
+                                    <i class="fa-solid fa-location-dot w-6 h-6"></i>
+                                </th>
+                                <td class="px-6 py-4">
+                                    <span id="contact_address">Vrindavan</span>
+                                </td>
+                            </tr>
+            
+                            <tr class="bg-white border-b dark:bg-gray-700 dark:border-gray-700">
+                                <th
+                                    scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                >
+                                    <i class="fa-solid fa-user w-6 h-6"></i>
+                                </th>
+                                <td class="px-6 py-4">
+                                    <span id="contact_about">Professional programmer</span>
+                                </td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"></tr>
+                                <th
+                                    scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                >
+                                    <i class="fa-regular fa-heart w-6 h-6"></i>
+                                </th>
+                                <td class="px-6 py-4">
+                                    <span id="contact_favourite">Favourite Contact</span>
+                                </td>
+                            </tr>
+            
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"></tr>
+                                <th
+                                    scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                >
+                                    <i class="fa-solid fa-earth-americas w-6 h-6"></i>
+                                </th>
+                                <td class="px-6 py-4">
+                                    <a id="contact_website">www.google.com</a>
+                                </td>
+                            </tr>
+            
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"></tr>
+                                <th
+                                    scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                >
+                                    <i class="fa-brands fa-linkedin-in w-6 h-6"></i>
+                                </th>
+                                <td class="px-6 py-4">
+                                    <a id="contact_linkedIn">www.google.com</a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+              </div>
+              <!-- Modal footer -->
+              <div class="flex items-center justify-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button onclick="closeContactModal()" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+              </div>
+            </div>
+      </div>
+  </div>
+  
+</div>

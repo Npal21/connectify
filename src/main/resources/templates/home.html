@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html 
+    lang="en"
+    th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}"
+>
+<head>
+    <title>Home Page</title>
+</head>
+<body class="min-h-screen flex flex-col">
+   
+    <div id="content" class="flex flex-col flex-grow">
+        <!-- Div 1 -->
+        <div class="flex-grow text-center bg-blue-500 text-white" style="padding: 7rem;" id="welcome_div"> 
+            <h1 class="text-3xl font-bold mb-8">Welcome to Connectly</h1>
+            <p class="mb-8">Manage all your contacts effortlessly and securely in one place.</p>
+            <a href="/signup" type="button" class="bg-white font-semibold text-blue-600 rounded-full px-3 py-2 shadow-md hover:bg-gray-100 mb-8">Get started</a>
+        </div>
+        <!-- Div 2 -->
+        <div class="flex-grow text-center" style="padding: 7rem;" id="features_div">
+            <h1 class="mb-8 text-3xl font-bold">Features</h1>
+            <div class="flex justify-center space-x-6">
+            <!-- card 1 -->
+            <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <i class="fa-solid fa-address-book fa-2x pb-2" style="color: #74b3fc;"></i>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Easy Contact Management</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Add, edit and organize your contacts in a user-friendly interface.</p>
+            </a>
+            <!-- card 2 -->
+            <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <i class="fa-solid fa-lock fa-2x pb-2" style="color: #74b3fc;"></i>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Secure Storage</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Your data is protected with top-level encryption and security measures.</p>
+            </a>
+            <!-- card 3 -->
+            <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <i class="fa-solid fa-globe fa-2x pb-2" style="color: #74b3fc;"></i>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">24/7 Access</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Access your contacts anytime, anywhere and from any device.</p>
+            </a>
+            </div>   
+
+        </div>
+
+        <!-- Div 3 -->
+        <div class="flex-grow text-center bg-blue-500 text-white" style="padding: 7rem;" id="services_div">
+            <h1 class="mb-8 text-3xl font-bold">Ready to Manage Your Contacts?</h1>
+            <p class="mb-8">Sign Up today and experience the easiest way to manage your contacts.</p>
+            <a href="signup" type="button" class="bg-white font-semibold text-blue-600 rounded-full px-3 py-2 shadow-md hover:bg-gray-100 mb-8">Create an Account</a>
+        </div>
+        <!-- Div 4 -->
+        <div class="flex-grow text-center" style="padding: 7rem;" id="feedback_div">
+            <h1 class="mb-8 text-3xl font-bold">What Our Users Say</h1>
+            <div class="flex justify-center space-x-6">
+                <!-- card -->                
+                <a href="#" class="block max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <p class="font-normal text-gray-600 dark:text-gray-400 italic">"Contact Manager has changed the way I organize my contacts. It's fast, secure and incredibly easy to use!"</p>
+                    <h2 class="font-bold pt-2">- Raghavendra Sharma</h2>
+                </a>
+                <!-- card -->
+                <a href="#" class="block max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <p class="font-normal text-gray-600 dark:text-gray-400 italic">"A fantastic app with great features! I love the 24/7 access and secure storage options."</p>
+                    <h2 class="font-bold pt-2">- Gopal Sonawane</h2>
+                </a>
+            </div>
+            
+        </div>
+        <!-- Div 5 -->
+        <div class="flex-grow flex justify-center text-center bg-gray-200 dark:bg-gray-700" style="padding: 3rem;" id="contact_div">
+            
+            <!-- Card -->  
+           
+                <form class="space-y-6 w-1/3 p-8 text-center" action="#">
+                    <h1 class="text-3xl font-bold text-gray-900 dark:text-white p-6">Get in Touch</h1>
+                    <div>
+                        <input type="name" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg placeholder-black focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Your Name" required />
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg placeholder-black focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Your Email" required />
+                    </div>
+                    <div>           
+                        <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg placeholder-black border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <a href="home" type="button" class="text-center w-1/2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send Message</a>
+                
+                </form>
+
+
+        </div>
+
+
+
+        
+    </div>
+    <script>
+        console.log("Home page");
+    </script>
+</body>
+</html>
